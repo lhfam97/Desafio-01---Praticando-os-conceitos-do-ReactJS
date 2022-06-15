@@ -1,0 +1,95 @@
+.boardHeader {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.boardHeader span {
+  background: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.createdTask {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.finishedTask {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.createdTask strong {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.finishedTask strong {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.taskContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wrapper {
+  max-width: 736px;
+  margin: -26px auto 0;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.input {
+  padding: 0.5rem;
+  height: 53px;
+  width: 736px;
+  color: var(--gray-300);
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+}
+
+.input:focus {
+  color: var(--gray-100);
+  border: 1px solid var(--purple-dark);
+}
+
+.button {
+  display: flex;
+  height: 52px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+  color: var(--gray-100);
+  background-color: var(--blue-dark);
+  cursor: pointer;
+  transition: background-color 0.1s;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.button:hover {
+  background-color: var(--blue);
+}
+
+.commentForm button[type="submit"]:hover {
+  background: var(--blue-dark);
+}
